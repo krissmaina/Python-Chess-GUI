@@ -403,7 +403,7 @@ class ChessBoard(tkinter.Canvas):
         return squares
 
     def __init__(self, window, width, height, relief, **kwargs):
-        super().__init__(master=window, width=width, height=height, relief=relief, **kwargs)
+        super().__init__(master=window, width=width, height=height, relief=relief, highlightthickness=0, **kwargs)
 
         self.window = window
 
